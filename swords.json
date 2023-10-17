@@ -57,7 +57,7 @@
             "durability": 32,
             "soul": 7
         },
-        "success_rate": 1
+        "success_rate": 77
     },
     "Wyvern Bone Blade": {
         "materials": [
@@ -69,7 +69,7 @@
             "durability": 30,
             "soul": 14
         },
-        "success_rate": 1
+        "success_rate": 75
     },
     "elven_blade": {
         "materials": [
@@ -271,7 +271,7 @@
             "wyvern_bone",
             "orcish_steel"
         ],
-        "success_rate": 1,
+        "success_rate": 65,
         "base_stats": {
             "strength": 55,
             "magic": 25,
@@ -442,7 +442,7 @@
             "wyvern_bone",
             "orcish_steel"
         ],
-        "success_rate": 99,
+        "success_rate": 42,
         "base_stats": {
             "strength": 150,
             "magic": 150,
