@@ -3,19 +3,6 @@ import random
 import sys
 from datetime import datetime
 
-def record_crafted_sword(username, sword_name=None, sword_stats=None):  
-    with open("records.txt", "a") as file:
-        if sword_name and sword_stats:
-            crafted_details = (f"{username} crafted {sword_name} with "
-                               f"Strength: {sword_stats['strength']:.2f}, "
-                               f"Magic: {sword_stats['magic']:.2f}, "
-                               f"Durability: {sword_stats['durability']:.2f}, "
-                               f"Soul: {sword_stats['soul']:.2f}\n")
-            file.write(crafted_details)
-        else:
-            file.write(f"{username} attempted to craft a sword but received a broken one.\n")
-
-
 def load_data(file_name):
     with open(file_name, 'r') as file:
         return json.load(file)
@@ -81,10 +68,8 @@ def main():
         if special_message:
             print(f"\n{special_message}\n")
         
-        record_crafted_sword(username, crafted_sword, sword_stats)
     else:
         print("\nSorry, your attempt to craft a sword with the provided materials has failed. You received a broken sword.")
-        record_crafted_sword(username)
 
 
 # Dictionary for special messages
