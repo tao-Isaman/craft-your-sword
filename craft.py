@@ -56,20 +56,23 @@ def main():
                     crafted_sword = sword
                     break
 
-    if crafted_sword and sword_stats:
-        print(f"\nSuccess! You've crafted the {crafted_sword}!")
-        print(f"Strength: {sword_stats['strength']:.2f}")
-        print(f"Magic: {sword_stats['magic']:.2f}")
-        print(f"Durability: {sword_stats['durability']:.2f}")
-        print(f"Soul: {sword_stats['soul']:.2f}")
+    comment_body = ""
 
-        special_data = RARE_SWORD_MESSAGES.get(crafted_sword)
-        if special_data:
-            print(f"\n{special_data['message']}\n")
-            print(f"IMAGE_URL: {special_data['image_url']}")
-            
+    if crafted_sword and sword_stats:
+        comment_body += f"\nSuccess! You've crafted the {crafted_sword}!\n"
+        comment_body += f"Strength: {sword_stats['strength']:.2f}\n"
+        comment_body += f"Magic: {sword_stats['magic']:.2f}\n"
+        comment_body += f"Durability: {sword_stats['durability']:.2f}\n"
+        comment_body += f"Soul: {sword_stats['soul']:.2f}\n"
+
+        sword_data = RARE_SWORD_MESSAGES.get(crafted_sword)
+        if sword_data:
+            comment_body += f"\n{sword_data['message']}\n"
+            comment_body += f"\n![Crafted Sword]({sword_data['image_url']})\n"
     else:
-        print("\nSorry, your attempt to craft a sword with the provided materials has failed. You received a broken sword.")
+        comment_body += "\nSorry, your attempt to craft a sword with the provided materials has failed. You received a broken sword.\n"
+
+    print(comment_body)
 
 # Dictionary for special messages
 RARE_SWORD_MESSAGES = {
