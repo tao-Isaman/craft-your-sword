@@ -18,6 +18,10 @@ def calculate_final_stats(sword_attributes, provided_materials, materials_data):
     total_soul = base_stats['soul']
 
     for material in provided_materials:
+        if material not in materials_data:
+            # If the material is not recognized, return None indicating a failed crafting
+            return None
+        
         random_multiplier = random.uniform(0.2, 1.0)
         total_strength += materials_data[material]['strength'] * random_multiplier
         total_magic += materials_data[material]['magic'] * random_multiplier
@@ -46,12 +50,13 @@ def main():
 
     for sword, attributes in swords_data.items():
         if all(material in pr_content['chosen_materials'] for material in attributes['materials']):
-            if random.randint(1, 100) <= attributes['success_rate']:
-                crafted_sword = sword
-                sword_stats = calculate_final_stats(attributes, pr_content['chosen_materials'], materials_data)
-                break
+            sword_stats = calculate_final_stats(attributes, pr_content['chosen_materials'], materials_data)
+            if sword_stats is not None:
+                if random.randint(1, 100) <= attributes['success_rate']:
+                    crafted_sword = sword
+                    break
 
-    if crafted_sword:
+    if crafted_sword and sword_stats:
         print(f"\nSuccess! You've crafted the {crafted_sword}!")
         print(f"Strength: {sword_stats['strength']:.2f}")
         print(f"Magic: {sword_stats['magic']:.2f}")
