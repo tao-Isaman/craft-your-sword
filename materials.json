@@ -1,0 +1,134 @@
+{
+    "iron": {
+        "strength": 10,
+        "magic": 5,
+        "durability": 20,
+        "soul": 1
+    },
+    "elf_dust": {
+        "strength": 5,
+        "magic": 25,
+        "durability": 5,
+        "soul": 15
+    },
+    "dragon_scale": {
+        "strength": 20,
+        "magic": 20,
+        "durability": 30,
+        "soul": 10
+    },
+    "mystic_wood": {
+        "strength": 7,
+        "magic": 30,
+        "durability": 10,
+        "soul": 20
+    },
+    "vampire_fang": {
+        "strength": 15,
+        "magic": 35,
+        "durability": 10,
+        "soul": 25
+    },
+    "orcish_steel": {
+        "strength": 25,
+        "magic": 2,
+        "durability": 30,
+        "soul": 5
+    },
+    "troll_leather": {
+        "strength": 12,
+        "magic": 5,
+        "durability": 25,
+        "soul": 8
+    },
+    "goblin_tooth": {
+        "strength": 8,
+        "magic": 10,
+        "durability": 12,
+        "soul": 15
+    },
+    "wyvern_bone": {
+        "strength": 20,
+        "magic": 7,
+        "durability": 28,
+        "soul": 12
+    },
+    "ogre_essence": {
+        "strength": 15,
+        "magic": 20,
+        "durability": 20,
+        "soul": 30
+    },
+    "coral_gem": {
+        "strength": 8,
+        "magic": 30,
+        "durability": 15,
+        "soul": 20
+    },
+    "deepsea_stone": {
+        "strength": 20,
+        "magic": 25,
+        "durability": 30,
+        "soul": 15
+    },
+    "merfolk_scale": {
+        "strength": 12,
+        "magic": 35,
+        "durability": 25,
+        "soul": 25
+    },
+    "kraken_ink": {
+        "strength": 15,
+        "magic": 40,
+        "durability": 20,
+        "soul": 30
+    },
+    "siren_song_crystal": {
+        "strength": 5,
+        "magic": 50,
+        "durability": 10,
+        "soul": 40
+    },
+    "abyssal_pearl": {
+        "strength": 10,
+        "magic": 45,
+        "durability": 20,
+        "soul": 35
+    },
+    "shadow_steel": {
+        "strength": 30,
+        "magic": 20,
+        "durability": 35,
+        "soul": 40
+    },
+    "void_essence": {
+        "strength": 10,
+        "magic": 50,
+        "durability": 15,
+        "soul": 50
+    },
+    "nightshade_crystal": {
+        "strength": 12,
+        "magic": 45,
+        "durability": 20,
+        "soul": 45
+    },
+    "demon_bone": {
+        "strength": 35,
+        "magic": 25,
+        "durability": 40,
+        "soul": 30
+    },
+    "umbra_cloth": {
+        "strength": 15,
+        "magic": 40,
+        "durability": 25,
+        "soul": 40
+    },
+    "eclipse_gem": {
+        "strength": 20,
+        "magic": 55,
+        "durability": 20,
+        "soul": 55
+    }
+}

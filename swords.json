@@ -1,0 +1,298 @@
+{
+    "elven_blade": {
+        "materials": [
+            "iron",
+            "elf_dust"
+        ],
+        "success_rate": 70,
+        "base_stats": {
+            "strength": 30,
+            "magic": 50,
+            "durability": 40,
+            "soul": 20
+        }
+    },
+    "dragon_sword": {
+        "materials": [
+            "iron",
+            "dragon_scale"
+        ],
+        "success_rate": 65,
+        "base_stats": {
+            "strength": 50,
+            "magic": 40,
+            "durability": 60,
+            "soul": 30
+        }
+    },
+    "mystic_saber": {
+        "materials": [
+            "mystic_wood",
+            "vampire_fang"
+        ],
+        "success_rate": 60,
+        "base_stats": {
+            "strength": 40,
+            "magic": 80,
+            "durability": 30,
+            "soul": 50
+        }
+    },
+    "orcish_cleaver": {
+        "materials": [
+            "orcish_steel",
+            "troll_leather"
+        ],
+        "success_rate": 75,
+        "base_stats": {
+            "strength": 60,
+            "magic": 10,
+            "durability": 65,
+            "soul": 20
+        }
+    },
+    "goblin_dagger": {
+        "materials": [
+            "goblin_tooth",
+            "orcish_steel"
+        ],
+        "success_rate": 60,
+        "base_stats": {
+            "strength": 40,
+            "magic": 20,
+            "durability": 45,
+            "soul": 25
+        }
+    },
+    "wyvern_blade": {
+        "materials": [
+            "wyvern_bone",
+            "orcish_steel"
+        ],
+        "success_rate": 65,
+        "base_stats": {
+            "strength": 55,
+            "magic": 25,
+            "durability": 60,
+            "soul": 30
+        }
+    },
+    "ogre_mace": {
+        "materials": [
+            "ogre_essence",
+            "orcish_steel",
+            "wyvern_bone"
+        ],
+        "success_rate": 50,
+        "base_stats": {
+            "strength": 70,
+            "magic": 30,
+            "durability": 70,
+            "soul": 40
+        }
+    },
+    "nightfall_blade": {
+        "materials": [
+            "shadow_steel",
+            "nightshade_crystal",
+            "umbra_cloth"
+        ],
+        "success_rate": 65,
+        "base_stats": {
+            "strength": 70,
+            "magic": 95,
+            "durability": 80,
+            "soul": 130
+        }
+    },
+    "siren's_song": {
+        "materials": [
+            "coral_gem",
+            "siren_song_crystal",
+            "merfolk_scale"
+        ],
+        "success_rate": 60,
+        "base_stats": {
+            "strength": 25,
+            "magic": 115,
+            "durability": 50,
+            "soul": 85
+        }
+    },
+    "draconian_saber": {
+        "materials": [
+            "dragon_scale",
+            "iron",
+            "mystic_wood"
+        ],
+        "success_rate": 70,
+        "base_stats": {
+            "strength": 55,
+            "magic": 70,
+            "durability": 85,
+            "soul": 50
+        }
+    },
+    "abyssal_reefblade": {
+        "materials": [
+            "deepsea_stone",
+            "kraken_ink",
+            "abyssal_pearl"
+        ],
+        "success_rate": 62,
+        "base_stats": {
+            "strength": 45,
+            "magic": 110,
+            "durability": 65,
+            "soul": 80
+        }
+    },
+    "demon_knight_sword": {
+        "materials": [
+            "demon_bone",
+            "shadow_steel",
+            "vampire_fang"
+        ],
+        "success_rate": 58,
+        "base_stats": {
+            "strength": 100,
+            "magic": 85,
+            "durability": 90,
+            "soul": 90
+        }
+    },
+    "elfen_gleam": {
+        "materials": [
+            "elf_dust",
+            "mystic_wood",
+            "eclipse_gem"
+        ],
+        "success_rate": 67,
+        "base_stats": {
+            "strength": 35,
+            "magic": 130,
+            "durability": 55,
+            "soul": 115
+        }
+    },
+    "troll_bane": {
+        "materials": [
+            "orcish_steel",
+            "troll_leather",
+            "goblin_tooth"
+        ],
+        "success_rate": 68,
+        "base_stats": {
+            "strength": 75,
+            "magic": 35,
+            "durability": 95,
+            "soul": 50
+        }
+    },
+    "void_breaker": {
+        "materials": [
+            "void_essence",
+            "shadow_steel",
+            "eclipse_gem"
+        ],
+        "success_rate": 63,
+        "base_stats": {
+            "strength": 65,
+            "magic": 125,
+            "durability": 70,
+            "soul": 145
+        }
+    },
+    "lunar_shadowblade": {
+        "materials": [
+            "nightshade_crystal",
+            "eclipse_gem",
+            "void_essence",
+            "umbra_cloth"
+        ],
+        "success_rate": 40,
+        "base_stats": {
+            "strength": 135,
+            "magic": 160,
+            "durability": 140,
+            "soul": 180
+        }
+    },
+    "oceanic_dreadfang": {
+        "materials": [
+            "kraken_ink",
+            "deepsea_stone",
+            "siren_song_crystal",
+            "merfolk_scale"
+        ],
+        "success_rate": 38,
+        "base_stats": {
+            "strength": 140,
+            "magic": 170,
+            "durability": 145,
+            "soul": 175
+        }
+    },
+    "draconian_heartseeker": {
+        "materials": [
+            "dragon_scale",
+            "vampire_fang",
+            "wyvern_bone",
+            "orcish_steel"
+        ],
+        "success_rate": 42,
+        "base_stats": {
+            "strength": 150,
+            "magic": 150,
+            "durability": 150,
+            "soul": 170
+        }
+    },
+    "whispering_voidtalon": {
+        "materials": [
+            "void_essence",
+            "shadow_steel",
+            "elf_dust",
+            "nightshade_crystal"
+        ],
+        "success_rate": 39,
+        "base_stats": {
+            "strength": 130,
+            "magic": 165,
+            "durability": 135,
+            "soul": 190
+        }
+    },
+    "ancient_abyssreaver": {
+        "materials": [
+            "abyssal_pearl",
+            "kraken_ink",
+            "coral_gem",
+            "siren_song_crystal",
+            "deepsea_stone"
+        ],
+        "success_rate": 37,
+        "base_stats": {
+            "strength": 145,
+            "magic": 180,
+            "durability": 148,
+            "soul": 185
+        }
+    },
+    "eclipsed_void_reaver": {
+        "materials": [
+            "eclipse_gem",
+            "void_essence",
+            "shadow_steel",
+            "demon_bone",
+            "kraken_ink"
+        ],
+        "success_rate": 45,
+        "base_stats": {
+            "strength": 150,
+            "magic": 175,
+            "durability": 150,
+            "soul": 190
+        }
+    }
+}

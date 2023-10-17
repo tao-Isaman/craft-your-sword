@@ -1,0 +1,35 @@
+name: Craft Sword Action
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'craft_recipes/**.json'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: |
+          # If you have any dependencies, you can install them here.
+          # For example: pip install -r requirements.txt
+      
+      - name: Run Script
+        run: python craft.py ${{ github.event.pull_request.user.login }} > output.txt
+      
+      - name: Comment on PR
+        run: |
+          GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          COMMENT_BODY=$(cat output.txt)
+          gh pr comment ${{ github.event.pull_request.number }} --body "$COMMENT_BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
