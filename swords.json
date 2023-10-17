@@ -9,7 +9,7 @@
             "durability": 22,
             "soul": 3
         },
-        "success_rate": 85
+        "success_rate": 50
     },
     "Dusty Elf Dagger": {
         "materials": [
@@ -21,7 +21,7 @@
             "durability": 7,
             "soul": 17
         },
-        "success_rate": 85
+        "success_rate": 50
     },
     "Trollish Shortsword": {
         "materials": [
