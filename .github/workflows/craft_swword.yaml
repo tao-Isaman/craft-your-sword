@@ -24,7 +24,14 @@ jobs:
           # For example: pip install -r requirements.txt
       
       - name: Run Script
-        run: python craft.py ${{ github.event.pull_request.user.login }} > output.txt
+        run: python craft.py ${{ github.event.pull_request.user.login }}
+      
+      - name: Commit and push changes (if any)
+        run: |
+          git config --local user.email "craft_bot@github.com"
+          git config --local user.name "Craft Bot"
+          git add .
+          git diff --exit-code && git commit -m "Record craft for ${{ github.event.pull_request.user.login }}" && git push origin || echo "No changes to commit"
       
       - name: Comment on PR
         run: |

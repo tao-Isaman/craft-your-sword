@@ -1,6 +1,20 @@
 import json
 import random
 import sys
+from datetime import datetime
+
+def record_crafted_sword(username, sword_name=None, sword_stats=None):  
+    with open("records.txt", "a") as file:
+        if sword_name and sword_stats:
+            crafted_details = (f"{username} crafted {sword_name} with "
+                               f"Strength: {sword_stats['strength']:.2f}, "
+                               f"Magic: {sword_stats['magic']:.2f}, "
+                               f"Durability: {sword_stats['durability']:.2f}, "
+                               f"Soul: {sword_stats['soul']:.2f}\n")
+            file.write(crafted_details)
+        else:
+            file.write(f"{username} attempted to craft a sword but received a broken one.\n")
+
 
 def load_data(file_name):
     with open(file_name, 'r') as file:
@@ -56,23 +70,22 @@ def main():
                     crafted_sword = sword
                     break
 
-    comment_body = ""
-
     if crafted_sword and sword_stats:
-        comment_body += f"\nSuccess! You've crafted the {crafted_sword}!\n"
-        comment_body += f"Strength: {sword_stats['strength']:.2f}\n"
-        comment_body += f"Magic: {sword_stats['magic']:.2f}\n"
-        comment_body += f"Durability: {sword_stats['durability']:.2f}\n"
-        comment_body += f"Soul: {sword_stats['soul']:.2f}\n"
-
-        sword_data = RARE_SWORD_MESSAGES.get(crafted_sword)
-        if sword_data:
-            comment_body += f"\n{sword_data['message']}\n"
-            comment_body += f"\n![Crafted Sword]({sword_data['image_url']})\n"
+        print(f"\nSuccess! You've crafted the {crafted_sword}!")
+        print(f"Strength: {sword_stats['strength']:.2f}")
+        print(f"Magic: {sword_stats['magic']:.2f}")
+        print(f"Durability: {sword_stats['durability']:.2f}")
+        print(f"Soul: {sword_stats['soul']:.2f}")
+        
+        special_message = RARE_SWORD_MESSAGES.get(crafted_sword)
+        if special_message:
+            print(f"\n{special_message}\n")
+        
+        record_crafted_sword(username, crafted_sword, sword_stats)
     else:
-        comment_body += "\nSorry, your attempt to craft a sword with the provided materials has failed. You received a broken sword.\n"
+        print("\nSorry, your attempt to craft a sword with the provided materials has failed. You received a broken sword.")
+        record_crafted_sword(username)
 
-    print(comment_body)
 
 # Dictionary for special messages
 RARE_SWORD_MESSAGES = {
