@@ -1,4 +1,8 @@
 {
-    "chosen_materials": ["iron", "elf_dust", "dragon_bone", "obsidian"]
+    "chosen_materials": [
+        "dragon_scale",
+        "vampire_fang",
+        "wyvern_bone",
+        "orcish_steel"
+    ]
 }
-  
