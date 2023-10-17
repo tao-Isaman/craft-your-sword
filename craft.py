@@ -63,21 +63,42 @@ def main():
         print(f"Durability: {sword_stats['durability']:.2f}")
         print(f"Soul: {sword_stats['soul']:.2f}")
 
-        special_message = RARE_SWORD_MESSAGES.get(crafted_sword)
-        if special_message:
-            print(f"\n{special_message}\n")
+        special_data = RARE_SWORD_MESSAGES.get(crafted_sword)
+        if special_data:
+            print(f"\n{special_data['message']}\n")
+            print(f"IMAGE_URL: {special_data['image_url']}")
+            
     else:
         print("\nSorry, your attempt to craft a sword with the provided materials has failed. You received a broken sword.")
 
 # Dictionary for special messages
 RARE_SWORD_MESSAGES = {
-    "eclipsed_void_reaver": "The cosmos trembles as the Eclipsed Void Reaver takes form!",
-    "lunar_shadowblade": "The night bows in respect; the Lunar Shadowblade is born!",
-    "oceanic_dreadfang": "The very oceans roar in recognition of the Oceanic Dreadfang's creation!",
-    "draconian_heartseeker": "Dragons of old awaken to herald the forging of the Draconian Heartseeker!",
-    "whispering_voidtalon": "Eerie whispers from the void celebrate the birth of the Whispering Voidtalon!",
-    "ancient_abyssreaver": "Timeless energies converge, marking the arrival of the Ancient Abyssreaver!"
+    "eclipsed_void_reaver": {
+        "message": "The cosmos trembles as the Eclipsed Void Reaver takes form!",
+        "image_url": "https://raw.githubusercontent.com/tao-Isaman/craft-your-sword/main/rare_sword_imgs/eclipsed_void_reaver.png"
+    },
+    "lunar_shadowblade": {
+        "message": "The night bows in respect; the Lunar Shadowblade is born!",
+        "image_url": "https://raw.githubusercontent.com/tao-Isaman/craft-your-sword/main/rare_sword_imgs/lunar_shadowblade.png"
+    },
+    "oceanic_dreadfang": {
+        "message": "The very oceans roar in recognition of the Oceanic Dreadfang's creation!",
+        "image_url": "https://raw.githubusercontent.com/tao-Isaman/craft-your-sword/main/rare_sword_imgs/oceanic_dreadfang.png"
+    },
+    "draconian_heartseeker": {
+        "message": "Dragons of old awaken to herald the forging of the Draconian Heartseeker!",
+        "image_url": "https://raw.githubusercontent.com/tao-Isaman/craft-your-sword/main/rare_sword_imgs/draconian_heartseeker.png"
+    },
+    "whispering_voidtalon": {
+        "message": "Eerie whispers from the void celebrate the birth of the Whispering Voidtalon!",
+        "image_url": "https://raw.githubusercontent.com/tao-Isaman/craft-your-sword/main/rare_sword_imgs/whispering_voidtalon.png"
+    },
+    "ancient_abyssreaver": {
+        "message": "Timeless energies converge, marking the arrival of the Ancient Abyssreaver!",
+        "image_url": "https://raw.githubusercontent.com/tao-Isaman/craft-your-sword/main/rare_sword_imgs/ancient_abyssreaver.png"
+    }
 }
+
 
 if __name__ == '__main__':
     main()
