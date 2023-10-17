@@ -24,7 +24,7 @@ jobs:
           # For example: pip install -r requirements.txt
       
       - name: Run Script
-        run: python craft.py ${{ github.event.pull_request.user.login }}
+        run: python craft.py ${{ github.event.pull_request.user.login }} > output.txt
       
       - name: Commit and push changes (if any)
         run: |
