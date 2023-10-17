@@ -31,3 +31,5 @@ jobs:
           echo ${{ secrets.MY_PERSONAL_TOKEN }} | gh auth login --with-token
           COMMENT_BODY=$(cat output.txt)
           gh pr comment ${{ github.event.pull_request.number }} --body "$COMMENT_BODY"
+        env:
+          GH_TOKEN: ${{ secrets.MY_PERSONAL_TOKEN }}
