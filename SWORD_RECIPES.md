@@ -2,7 +2,7 @@
 
 ## Iron Blade
 - **Materials**: iron
-- **Success Rate**: 85%
+- **Success Rate**: 71%
 - **Base Stats**:
   - **Strength**: 12
   - **Magic**: 6
@@ -11,7 +11,7 @@
 
 ## Dusty Elf Dagger
 - **Materials**: elf_dust
-- **Success Rate**: 85%
+- **Success Rate**: 72%
 - **Base Stats**:
   - **Strength**: 7
   - **Magic**: 27
@@ -98,6 +98,96 @@
   - **Magic**: 20
   - **Durability**: 45
   - **Soul**: 25
+
+## Iron_Elf_Blade
+- **Materials**: iron, elf_dust
+- **Success Rate**: 65%
+- **Base Stats**:
+  - **Strength**: 15
+  - **Magic**: 30
+  - **Durability**: 25
+  - **Soul**: 16
+
+## Dragonscale_Broadsword
+- **Materials**: iron, dragon_scale
+- **Success Rate**: 60%
+- **Base Stats**:
+  - **Strength**: 30
+  - **Magic**: 25
+  - **Durability**: 50
+  - **Soul**: 11
+
+## Mysticwood_Saber
+- **Materials**: elf_dust, mystic_wood
+- **Success Rate**: 58%
+- **Base Stats**:
+  - **Strength**: 12
+  - **Magic**: 55
+  - **Durability**: 15
+  - **Soul**: 35
+
+## Nightshade_Dagger
+- **Materials**: vampire_fang, nightshade_crystal
+- **Success Rate**: 57%
+- **Base Stats**:
+  - **Strength**: 27
+  - **Magic**: 80
+  - **Durability**: 30
+  - **Soul**: 70
+
+## Orcish_Trollblade
+- **Materials**: orcish_steel, troll_leather
+- **Success Rate**: 62%
+- **Base Stats**:
+  - **Strength**: 37
+  - **Magic**: 7
+  - **Durability**: 55
+  - **Soul**: 13
+
+## Wyvernbone_Scimitar
+- **Materials**: goblin_tooth, wyvern_bone
+- **Success Rate**: 61%
+- **Base Stats**:
+  - **Strength**: 28
+  - **Magic**: 17
+  - **Durability**: 40
+  - **Soul**: 27
+
+## Ogre_Coralblade
+- **Materials**: ogre_essence, coral_gem
+- **Success Rate**: 56%
+- **Base Stats**:
+  - **Strength**: 23
+  - **Magic**: 50
+  - **Durability**: 35
+  - **Soul**: 50
+
+## Krakens_Abyssal_Cutlass
+- **Materials**: kraken_ink, abyssal_pearl
+- **Success Rate**: 55%
+- **Base Stats**:
+  - **Strength**: 25
+  - **Magic**: 85
+  - **Durability**: 40
+  - **Soul**: 65
+
+## Demonshade_Longsword
+- **Materials**: demon_bone, nightshade_crystal
+- **Success Rate**: 54%
+- **Base Stats**:
+  - **Strength**: 47
+  - **Magic**: 70
+  - **Durability**: 60
+  - **Soul**: 75
+
+## Eclipsed_Voidblade
+- **Materials**: shadow_steel, void_essence
+- **Success Rate**: 53%
+- **Base Stats**:
+  - **Strength**: 40
+  - **Magic**: 70
+  - **Durability**: 50
+  - **Soul**: 90
 
 ## wyvern_blade
 - **Materials**: wyvern_bone, orcish_steel
