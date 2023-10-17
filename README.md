@@ -1,4 +1,4 @@
-# craft-your-sword
+# ⚔️ craft-your-sword ⚔️
 
 Welcome to the Sword Crafting Simulator repository. Here, developers can test their mettle and try to craft the ultimate sword using unique materials, and see the outcome of their chosen combinations!
 
@@ -9,6 +9,8 @@ Welcome to the Sword Crafting Simulator repository. Here, developers can test th
 3. [Usage](#usage)
 4. [Sword Recipes](#sword-recipes)
 5. [Materials Information](#materials-information)
+6. [Examples of Swords](#examples-of-swords)
+7. [Example of Json file](#example-of-json-file)
 
 ## Features
 
@@ -36,3 +38,28 @@ Check out our [SWORD_RECIPES.md](SWORD_RECIPES.md) to see available sword recipe
 
 Discover the properties and strengths of each material in the [MATERIALS.md](MATERIALS.md).
 
+## Examples of Swords
+- **The Ordinary Blade**: A symbol of power and elegance.
+  ![Ordinary Sword](./images/sword_example.png)
+
+- **The Broken Hilt**: Not every attempt yields success. Sometimes, you might end up with this.
+  ![Failed Attempt](./images/broken_sword_example.png)
+
+- **The Rare Gem**: Only the luckiest and most skilled crafters manage to forge such a masterpiece.
+  ![The Ultimate Prize](./images/rare_sword_example.png)
+
+## Example of Json file 
+Please create a PR with a JSON file named after your GitHub username, such as tao-Isaman.json, and place it inside the craft_recipes folder.
+
+this is example :
+
+```json
+{
+    "chosen_materials": [
+        "dragon_scale",
+        "vampire_fang",
+        "wyvern_bone",
+        "orcish_steel"
+    ]
+}
+```
