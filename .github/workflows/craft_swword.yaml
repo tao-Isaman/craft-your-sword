@@ -27,12 +27,12 @@ jobs:
         run: python craft.py ${{ github.event.pull_request.user.login }} > output.txt
       
       - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        author_email: "tao.isaman@gmail.com"
-        author_name: "tao-Isaman"
-        message: "Record craft for ${{ github.event.pull_request.user.login }}"
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          author_email: "tao.isaman@gmail.com"
+          author_name: "tao-Isaman"
+          message: "Record craft for ${{ github.event.pull_request.user.login }}"
       
       - name: Comment on PR
         run: |
