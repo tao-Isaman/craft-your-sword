@@ -29,10 +29,6 @@ jobs:
       - name: Comment on PR
         run: |
           COMMENT_BODY=$(cat output.txt)
-          if grep -q "IMAGE_URL" <<< "$COMMENT_BODY"; then
-            IMAGE_URL=$(grep "IMAGE_URL" <<< "$COMMENT_BODY" | cut -d':' -f2 | tr -d ' ')
-            COMMENT_BODY=$(echo -e "$COMMENT_BODY\n\n![Crafted Sword]($IMAGE_URL)")
-          fi
           gh pr comment ${{ github.event.pull_request.number }} --body "$COMMENT_BODY"
         env:
           GH_TOKEN: ${{ secrets.MY_PERSONAL_TOKEN }}
