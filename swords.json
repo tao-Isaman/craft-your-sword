@@ -1,4 +1,76 @@
 {
+    "Iron Blade": {
+        "materials": [
+            "iron"
+        ],
+        "base_stats": {
+            "strength": 12,
+            "magic": 6,
+            "durability": 22,
+            "soul": 3
+        },
+        "success_rate": 85
+    },
+    "Dusty Elf Dagger": {
+        "materials": [
+            "elf_dust"
+        ],
+        "base_stats": {
+            "strength": 7,
+            "magic": 27,
+            "durability": 7,
+            "soul": 17
+        },
+        "success_rate": 85
+    },
+    "Trollish Shortsword": {
+        "materials": [
+            "troll_leather"
+        ],
+        "base_stats": {
+            "strength": 14,
+            "magic": 7,
+            "durability": 27,
+            "soul": 10
+        },
+        "success_rate": 81
+    },
+    "Goblin Toothpick": {
+        "materials": [
+            "goblin_tooth"
+        ],
+        "base_stats": {
+            "strength": 10,
+            "magic": 12,
+            "durability": 14,
+            "soul": 17
+        },
+        "success_rate": 79
+    },
+    "Orcish Club": {
+        "materials": [
+            "orcish_steel"
+        ],
+        "base_stats": {
+            "strength": 27,
+            "magic": 4,
+            "durability": 32,
+            "soul": 7
+        },
+        "success_rate": 77
+    },
+    "Wyvern Bone Blade": {
+        "materials": [
+            "wyvern_bone"
+        ],
+        "base_stats": {
+            "strength": 22,
+            "magic": 9,
+            "durability": 30,
+            "soul": 14
+        },
+        "success_rate": 75
+    },
     "elven_blade": {
         "materials": [
             "iron",
