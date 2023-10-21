@@ -1,0 +1,14 @@
+{
+  "Wyvern Bone Blade": {
+        "materials": [
+            "wyvern_bone"
+        ],
+        "base_stats": {
+            "strength": 22,
+            "magic": 9,
+            "durability": 30,
+            "soul": 14
+        },
+        "success_rate": 75
+    }
+}
