@@ -1,14 +1,8 @@
 {
-  "Wyvern Bone Blade": {
-        "materials": [
-            "wyvern_bone"
-        ],
-        "base_stats": {
-            "strength": 22,
-            "magic": 9,
-            "durability": 30,
-            "soul": 14
-        },
-        "success_rate": 75
-    }
+    "chosen_materials": [
+        "dragon_scale",
+        "vampire_fang",
+        "wyvern_bone",
+        "orcish_steel"
+    ]
 }
