@@ -58,6 +58,7 @@ def main():
                     break
 
     if crafted_sword and sword_stats:
+        print(f"{username} : {crafted_sword} : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         print(f"\nSuccess! You've crafted the {crafted_sword}!")
         print(f"Strength: {sword_stats['strength']:.2f}")
         print(f"Magic: {sword_stats['magic']:.2f}")
