@@ -8,6 +8,7 @@ on:
 
 permissions:
   pull-requests: write  # Allow commenting on PRs
+  contents: write
 
 jobs:
   run-script:
@@ -54,4 +55,6 @@ jobs:
           git config --global user.email "tao.isaman@gmail.com"
           git add records.txt  # Stage records.txt
           git commit -m "Add first line to records.txt from output.txt"  # Commit the change
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.head_ref }}  # Push to the PR branch
+          git push origin HEAD:${{ github.head_ref }}  # Push to the PR branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
