@@ -54,7 +54,7 @@ jobs:
           git config --global user.name "tao-Isaman"
           git config --global user.email "tao.isaman@gmail.com"
           git add records.txt  # Stage records.txt
-          git commit -m "Add first line to records.txt from output.txt"  # Commit the change
+          git commit -m "Add data to records.text"  # Commit the change
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git push origin HEAD:${{ github.head_ref }}  # Push to the PR branch
         env:
