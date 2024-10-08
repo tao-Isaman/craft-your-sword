@@ -6,6 +6,9 @@ on:
     paths:
       - 'craft_recipes/**.json'
 
+permissions:
+  pull-requests: write  # Allow commenting on PRs
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
