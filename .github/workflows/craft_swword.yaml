@@ -29,6 +29,22 @@ jobs:
       - name: Run Script
         run: python craft.py ${{ github.event.pull_request.user.login }} > output.txt
       
+      - name: Extract first line and write to records.txt
+        run: |
+          # Extract the first line from output.txt
+          FIRST_LINE=$(head -n 1 output.txt)
+          echo "$FIRST_LINE" > records.txt
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "CraftingBot"  # Change to your desired bot name
+          git config --global user.email "craftingbot@example.com"  # Change to your desired email
+          git add records.txt
+          git commit -m "Add first line to records.txt from output.txt"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
       - name: Comment on PR
         run: |
           COMMENT_BODY=$(cat output.txt)
