@@ -8,6 +8,7 @@ on:
 
 permissions:
   pull-requests: write  # Allow commenting on PRs
+  contents: write
 
 jobs:
   run-script:
@@ -15,7 +16,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      
+        with:
+          persist-credentials: false
+          fetch-depth: 0  # Fetch all history for all branches
+
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
@@ -29,25 +33,29 @@ jobs:
       - name: Run Script
         run: python craft.py ${{ github.event.pull_request.user.login }} > output.txt
       
-      - name: Extract first line and write to records.txt
-        run: |
-          # Extract the first line from output.txt
-          FIRST_LINE=$(head -n 1 output.txt)
-          echo "$FIRST_LINE" > records.txt
-      
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "CraftingBot" 
-          git config --global user.email "craftingbot@example.com" 
-          git add records.txt
-          git commit -m "Create records.txt"
-          git push origin HEAD:${{ github.ref }}  # Push to the branch associated with the PR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
       - name: Comment on PR
         run: |
-          COMMENT_BODY=$(cat output.txt)
+          COMMENT_BODY=$(cat output.txt)  # Read content from output.txt
           gh pr comment ${{ github.event.pull_request.number }} --body "$COMMENT_BODY"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create records.txt
+        run: |
+          FIRST_LINE=$(head -n 1 output.txt)  # Extract the first line from output.txt
+          echo "$FIRST_LINE" > records.txt
+
+      - name: Remove output.txt
+        run: |
+          rm output.txt  # Remove output.txt after commenting
+      
+      - name: Commit & Push changes
+        run: |
+          git config --global user.name "tao-Isaman"
+          git config --global user.email "tao.isaman@gmail.com"
+          git add records.txt  # Stage records.txt
+          git commit -m "Add first line to records.txt from output.txt"  # Commit the change
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin HEAD:${{ github.head_ref }}  # Push to the PR branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
