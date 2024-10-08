@@ -37,11 +37,11 @@ jobs:
       
       - name: Commit and push changes
         run: |
-          git config --global user.name "CraftingBot"  # Change to your desired bot name
-          git config --global user.email "craftingbot@example.com"  # Change to your desired email
+          git config --global user.name "CraftingBot" 
+          git config --global user.email "craftingbot@example.com" 
           git add records.txt
-          git commit -m "Add first line to records.txt from output.txt"
-          git push
+          git commit -m "Create records.txt"
+          git push origin HEAD:${{ github.ref }}  # Push to the branch associated with the PR
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
