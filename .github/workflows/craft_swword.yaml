@@ -43,7 +43,7 @@ jobs:
       - name: Create records.txt
         run: |
           FIRST_LINE=$(head -n 1 output.txt)  # Extract the first line from output.txt
-          echo "$FIRST_LINE" > records.txt
+          echo "$FIRST_LINE" >> records.txt
 
       - name: Remove output.txt
         run: |
